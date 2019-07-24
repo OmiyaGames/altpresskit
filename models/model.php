@@ -11,6 +11,7 @@ class Model {
 	public $images = array();
 	public $icon;
 	public $logo;
+	public $header;
 	
 	public $logoZip;
 	public $imageZip;
@@ -29,6 +30,10 @@ class Model {
 				if (Model::endsWith($image, 'icon.png')) {
 					$this->icon = $image;
 				}
+				
+				if (Model::endsWith($image, 'header.png')) {
+					$this->header = $image;
+				}
 
 				if (Model::endsWith($image, 'images.zip')) {
 					$this->imageZip = $image;
@@ -43,7 +48,7 @@ class Model {
 		}
 
 		if (!isset($this->icon)) $this->icon = $this->logo;
-
+		if (!isset($this->header)) $this->header = $this->logo;
 	}
 
 	public function __get($param) {

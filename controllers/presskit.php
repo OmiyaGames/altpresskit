@@ -17,7 +17,7 @@ class PresskitController extends Controller {
 		ViewHelper::$isHome = true;
 		ViewHelper::$title = 'presskit for ' . $this->developer->title;
 		ViewHelper::$header = $this->developer->title;
-		ViewHelper::$headerImage = $this->developer->icon;
+		ViewHelper::$headerImage = $this->developer->header;
 		ViewHelper::render('devfacts', array('data' => $this->developer));
 		ViewHelper::render('historydescription', array('data' => $this->developer));
 		ViewHelper::render('images', array('data' => $this->developer));
@@ -39,7 +39,7 @@ class PresskitController extends Controller {
 
 		ViewHelper::$title = 'presskit for ' . $game->title . ' by ' . $this->developer->title;
 		ViewHelper::$header = $game->title;
-		ViewHelper::$headerImage = "../" . $game->icon;
+		ViewHelper::$headerImage = "../" . $game->header;
 		ViewHelper::$headerColor = $game->color;
 		ViewHelper::render('gamefacts', array('data' => $game, 'developer' => $this->developer));
 		ViewHelper::render('historydescription', array('data' => $game));
