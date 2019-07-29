@@ -92,6 +92,10 @@ dt, #factsheet caption {
 	background-color: #eee;
 }
 
+#factsheet dd {
+	word-wrap: break-word;
+}
+
 #images li a {
 	background-size: cover;
 	display: block;
