@@ -11,12 +11,12 @@
 #games li a {
 	height: 100px;
 	background-size: cover;
-	background-color: #f0f0f0;
+	background-color: #ffffff;
 	background-position: 50%;
 	text-decoration: none;
 	display: block;
 	line-height: 234px;
-	border-bottom: 35px solid rgb(32, 127, 146);
+	border-bottom: 35px solid rgba(0, 0, 0, 0.6);
 	font-weight: bold;
 	text-indent: 15px;
 	color: white;
@@ -25,7 +25,7 @@
 }
 
 #games li a:hover {
-	border-bottom-color: rgb(0, 152, 182);
+	border-bottom-color: rgb(18, 18, 18);
 }
 
 #games .tall {
@@ -126,16 +126,16 @@ dt, #factsheet caption {
 	display: block;
 	padding: 10px;
 	margin: 0;
-	background: rgb(32, 127, 146);
+	background: none;
 	text-decoration: none;
-	color: #fff;
+	color: #181818;
 	font-weight: bold;
-	border-left: 15px solid rgba(0, 0, 0, 0.2);
+	border-left: 4px solid rgba(0, 0, 0, 0.15);
 	transition: background .2s ease-in;
 }
 
 #menu li a:hover {
-	background: rgb(0, 152, 182);
+	background: rgba(0, 0, 0, 0.1);
 }
 
 #historydescription, #about {
@@ -170,17 +170,18 @@ blockquote {
 }
 
 blockquote span {
-	padding: 9px 19px 10px 20px;
+	padding: 9px 8px 10px 6px;
 	display: block;
-	background-color: rgb(32, 127, 146);
-	color: white;
+	border-bottom: #555 solid 1px;
+	border-right: #555 solid 1px;
+	color: #444;
 }
 
 blockquote span:after {
 	content: "\0020";
 	display: block;
 	border: 10px inset transparent;
-	border-top: 10px solid rgb(32, 127, 146);
+	border-top: 10px solid #555;
 	float: right;
 	position: absolute;
 	right: 20px;
@@ -211,7 +212,7 @@ footer {
 }
 
 #creditlink {
-	background: rgb(32, 127, 146) url('../images/logo.svg');
+	background: rgb(102, 134, 191) url('../images/logo.svg');
 	background-size: contain;
 	display: block;
 	width: 30px;
