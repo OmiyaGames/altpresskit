@@ -37,6 +37,10 @@
 	width: 100%;
 }
 
+#images .icon-download {
+	margin-left: 10px;
+}
+
 .video p {
 	white-space: nowrap;
 	text-overflow: ellipsis;
