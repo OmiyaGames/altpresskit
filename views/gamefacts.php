@@ -30,9 +30,11 @@
 	</dl>
 
 	<?php if($data->prices != null) : ?>
+	<h5>Pricing:</h5>
+	
 	<table class="prices">
 		<?php foreach($data->prices as $key => $platform): ?>
-			<caption>Regular Price <?php echo $key != null ? '(' . $key . ')' : ''; ?></caption>
+			<?php echo $key != null ? '<caption>' . $key . '</caption>' : ''; ?>
 			<?php foreach($platform as $price): ?>
 				<tr>
 					<td><?php echo $price['currency']; ?></td>
