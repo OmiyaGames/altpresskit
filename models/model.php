@@ -27,23 +27,15 @@ class Model {
 					if (Model::endsWith($image, 'logo.png') || Model::endsWith($image, 'logo.svg')) {
 						$this->logo = $image;
 						unset($this->images[$folder][$key]);
-					}
-					
-					if (Model::endsWith($image, 'icon.png')) {
+					} else if (Model::endsWith($image, 'icon.png')) {
 						$this->icon = $image;
-					}
-
-					if (Model::endsWith($image, 'header.png')) {
+					} else if (Model::endsWith($image, 'header.png')) {
 						$this->header = $image;
 						unset($this->images[$folder][$key]);
-					}
-
-					if (Model::endsWith($image, 'images.zip')) {
+					} else if (Model::endsWith($image, 'images.zip')) {
 						$this->imageZip = $image;
 						unset($this->images[$folder][$key]);
-					}
-
-					if (Model::endsWith($image, 'logo.zip')) {
+					} else if (Model::endsWith($image, 'logo.zip')) {
 						$this->logoZip = $image;
 						unset($this->images[$folder][$key]);
 					}
