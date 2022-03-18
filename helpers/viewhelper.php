@@ -4,8 +4,8 @@ class ViewHelper {
 
 	public static $title = 'presskit();';
 	public static $header = 'presskit();';
-	public static $headerImage = '';
-	public static $headerColor = '';
+	public static $headerImage = null;
+	public static $headerColor = null;
 	public static $template = 'default';
 	public static $isHome = false;
 	public static $mod_rewrite = false;
@@ -40,7 +40,7 @@ class ViewHelper {
 	}
 
 	public static function icon($name){
-		return '<i class="icon-' . $name . ' icon-large"></i>';
+		return '<i class="icon-' . $name . ' icon-large">&nbsp;</i>';
 	}
 
 	public static function alphaomega($count, $offset = 0, $modulo = 2){
